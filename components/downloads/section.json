@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_downloads_sections",
+  "info": {
+    "name": "section",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "fileDownloads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "downloads.download"
+    }
+  }
+}

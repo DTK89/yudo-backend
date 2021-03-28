@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sucessfulCases",
+  "info": {
+    "name": "Sucessful Cases",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "cavitiesNo": {
+      "type": "integer"
+    },
+    "gatesNo": {
+      "type": "integer"
+    },
+    "material": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "system": {
+      "type": "string"
+    },
+    "gateStyle": {
+      "type": "string"
+    },
+    "applicationCase": {
+      "type": "string"
+    },
+    "applicationPicture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "market": {
+      "model": "market",
+      "via": "sucessfulCases"
+    }
+  }
+}

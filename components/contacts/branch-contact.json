@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_contacts_branch_contacts",
+  "info": {
+    "name": "branchContact",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "branchName": {
+      "type": "string"
+    },
+    "adress1": {
+      "type": "string"
+    },
+    "adress2": {
+      "type": "string"
+    },
+    "adress3": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

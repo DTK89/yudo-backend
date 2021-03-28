@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "Contact",
+  "info": {
+    "name": "Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "companyName": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "buildingNo": {
+      "type": "string"
+    },
+    "localNo": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "nip": {
+      "type": "string"
+    },
+    "inquiries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.administration"
+    },
+    "service": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.administration"
+    },
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.administration"
+    },
+    "administration": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.administration"
+    }
+  }
+}

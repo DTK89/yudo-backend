@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_downloads_downloads",
+  "info": {
+    "name": "Download",
+    "icon": "download",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

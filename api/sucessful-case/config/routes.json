@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sucessful-cases",
+      "handler": "sucessful-case.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sucessful-cases/count",
+      "handler": "sucessful-case.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sucessful-cases/:id",
+      "handler": "sucessful-case.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sucessful-cases",
+      "handler": "sucessful-case.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sucessful-cases/:id",
+      "handler": "sucessful-case.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sucessful-cases/:id",
+      "handler": "sucessful-case.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

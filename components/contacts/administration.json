@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_contacts_administrations",
+  "info": {
+    "name": "contactPerson",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "mobilePhone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

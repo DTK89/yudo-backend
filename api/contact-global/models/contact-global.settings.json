@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_globals",
+  "info": {
+    "name": "Contact Worldwide",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "koreaHq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contacts.branch-contact"
+    },
+    "europeHq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.branch-contact"
+    },
+    "chinaHq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.branch-contact"
+    },
+    "branchContact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.branch-contact"
+    }
+  }
+}
