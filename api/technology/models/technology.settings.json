@@ -8,11 +8,22 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "label": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "label"
+    },
+    "paragraph": {
+      "type": "dynamiczone",
+      "components": [
+        "description.single-rich-text",
+        "description.paragraph"
+      ]
     }
   }
 }

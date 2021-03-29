@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "product_lists",
+  "info": {
+    "name": "Product List",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "productList": {
+      "type": "dynamiczone",
+      "components": [
+        "products.products-group",
+        "products.single-product"
+      ]
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "products",
+  "kind": "singleType",
+  "collectionName": "technology_lists",
   "info": {
-    "name": "products",
+    "name": "Technology List",
     "description": ""
   },
   "options": {
@@ -12,20 +12,16 @@
   },
   "attributes": {
     "label": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
     "slug": {
       "type": "uid",
-      "required": true,
       "targetField": "label"
     },
-    "paragraph": {
+    "technologyList": {
       "type": "dynamiczone",
       "components": [
-        "description.paragraph",
-        "description.single-rich-text"
+        "technologies.single-technology"
       ]
     }
   }
