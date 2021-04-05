@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/market-list",
+      "handler": "market-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/market-list",
+      "handler": "market-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/market-list",
+      "handler": "market-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
