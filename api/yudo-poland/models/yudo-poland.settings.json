@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "yudo_polands",
+  "info": {
+    "name": "About YUDO Poland",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

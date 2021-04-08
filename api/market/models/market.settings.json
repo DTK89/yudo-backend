@@ -16,28 +16,13 @@
       "unique": true,
       "required": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
-    "applications": {
+    "paragraph": {
       "type": "dynamiczone",
       "components": [
-        "features.nozzle"
+        "description.nozzle",
+        "description.single-rich-text",
+        "description.paragraph"
       ]
-    },
-    "sucessfulCases": {
-      "via": "market",
-      "collection": "sucessful-case"
-    },
-    "marketPicture": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
     },
     "slug": {
       "type": "uid",

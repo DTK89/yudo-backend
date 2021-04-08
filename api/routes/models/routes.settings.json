@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routes",
+  "info": {
+    "name": "Routes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "subSection": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.single-section",
+        "navigation.group-section"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "background": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -46,8 +46,24 @@
       "required": false
     },
     "market": {
-      "model": "market",
-      "via": "sucessfulCases"
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "automotive",
+        "tv",
+        "laptops",
+        "mobile",
+        "office",
+        "home",
+        "packaging",
+        "medical",
+        "industrial"
+      ],
+      "default": "none"
+    },
+    "display": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
