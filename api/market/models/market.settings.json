@@ -10,38 +10,42 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "label": {
       "type": "string",
       "unique": true,
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
-    "applications": {
+    "paragraph": {
       "type": "dynamiczone",
       "components": [
-        "features.nozzle"
-      ]
-    },
-    "sucessfulCases": {
-      "via": "market",
-      "collection": "sucessful-case"
-    },
-    "marketPicture": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
+        "description.nozzle",
+        "description.single-rich-text",
+        "description.paragraph"
       ],
-      "plugin": "upload",
-      "required": false
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
       "required": true
+    },
+    "sucessful_cases": {
+      "via": "markets",
+      "collection": "sucessful-case"
     }
   }
 }

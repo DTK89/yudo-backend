@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_products_products_groups",
+  "collectionName": "components_navigation_group_sections",
   "info": {
-    "name": "productsGroup",
-    "icon": "layer-group",
+    "name": "multiSection",
+    "icon": "angle-double-down",
     "description": ""
   },
   "options": {},
@@ -13,10 +13,10 @@
     "slug": {
       "type": "string"
     },
-    "product": {
+    "singleSection": {
       "type": "component",
       "repeatable": true,
-      "component": "products.product"
+      "component": "navigation.single-section"
     }
   }
 }

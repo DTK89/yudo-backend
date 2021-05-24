@@ -1,8 +1,8 @@
 {
   "name": "yudo-backend",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "description": "Backend app to manage yudopl.com website",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,20 +11,22 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.5.3",
-    "strapi-admin": "3.5.3",
-    "strapi-utils": "3.5.3",
-    "strapi-plugin-content-type-builder": "3.5.3",
-    "strapi-plugin-content-manager": "3.5.3",
-    "strapi-plugin-users-permissions": "3.5.3",
-    "strapi-plugin-email": "3.5.3",
-    "strapi-plugin-upload": "3.5.3",
-    "strapi-connector-bookshelf": "3.5.3",
     "knex": "0.21.18",
-    "sqlite3": "5.0.0"
+    "pg": "8.5.1",
+    "strapi": "^3.6.2",
+    "strapi-admin": "^3.6.2",
+    "strapi-connector-bookshelf": "^3.6.2",
+    "strapi-plugin-content-manager": "^3.6.2",
+    "strapi-plugin-content-type-builder": "^3.6.2",
+    "strapi-plugin-email": "^3.6.2",
+    "strapi-plugin-graphql": "^3.6.2",
+    "strapi-plugin-i18n": "^3.6.2",
+    "strapi-plugin-upload": "^3.6.2",
+    "strapi-plugin-users-permissions": "^3.6.2",
+    "strapi-utils": "^3.6.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Dawid Kamiński"
   },
   "strapi": {
     "uuid": "4148b05d-6dd1-4684-8f51-66110c635519"

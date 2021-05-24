@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "routes",
   "info": {
-    "name": "products",
+    "name": "Routes",
     "description": ""
   },
   "options": {
@@ -18,25 +18,40 @@
   "attributes": {
     "label": {
       "type": "string",
-      "required": true,
-      "unique": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "label"
-    },
-    "paragraph": {
+    "subSection": {
       "type": "dynamiczone",
       "components": [
-        "description.paragraph",
-        "description.single-rich-text"
+        "navigation.single-section",
+        "navigation.group-section"
       ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "background": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true

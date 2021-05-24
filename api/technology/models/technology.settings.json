@@ -1,18 +1,43 @@
 {
   "kind": "collectionType",
-  "collectionName": "technologies",
+  "collectionName": "technology",
   "info": {
-    "name": "Technology",
+    "name": "technology",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
   },
   "attributes": {
     "label": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "paragraph": {
+      "type": "dynamiczone",
+      "components": [
+        "description.single-rich-text",
+        "description.paragraph"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

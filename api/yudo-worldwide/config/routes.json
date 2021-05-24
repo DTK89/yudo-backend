@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/about-us",
-      "handler": "about-us.find",
+      "path": "/yudo-worldwide",
+      "handler": "yudo-worldwide.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/about-us",
-      "handler": "about-us.update",
+      "path": "/yudo-worldwide",
+      "handler": "yudo-worldwide.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/about-us",
-      "handler": "about-us.delete",
+      "path": "/yudo-worldwide",
+      "handler": "yudo-worldwide.delete",
       "config": {
         "policies": []
       }

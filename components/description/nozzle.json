@@ -2,7 +2,8 @@
   "collectionName": "components_features_nozzles",
   "info": {
     "name": "Nozzle",
-    "icon": "arrow-alt-circle-down"
+    "icon": "arrow-alt-circle-down",
+    "description": ""
   },
   "options": {},
   "attributes": {

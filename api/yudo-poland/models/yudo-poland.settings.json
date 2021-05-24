@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "products",
+  "kind": "singleType",
+  "collectionName": "yudo_polands",
   "info": {
-    "name": "products",
+    "name": "About YUDO Poland",
     "description": ""
   },
   "options": {
@@ -16,27 +16,16 @@
     }
   },
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
-      "required": true,
-      "unique": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "label"
-    },
-    "paragraph": {
-      "type": "dynamiczone",
-      "components": [
-        "description.paragraph",
-        "description.single-rich-text"
-      ],
+    "description": {
+      "type": "richtext",
       "pluginOptions": {
         "i18n": {
           "localized": true

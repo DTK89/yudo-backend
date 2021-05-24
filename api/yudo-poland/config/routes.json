@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/about-yudo",
-      "handler": "about-yudo.find",
+      "path": "/yudo-poland",
+      "handler": "yudo-poland.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/about-yudo",
-      "handler": "about-yudo.update",
+      "path": "/yudo-poland",
+      "handler": "yudo-poland.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/about-yudo",
-      "handler": "about-yudo.delete",
+      "path": "/yudo-poland",
+      "handler": "yudo-poland.delete",
       "config": {
         "policies": []
       }
