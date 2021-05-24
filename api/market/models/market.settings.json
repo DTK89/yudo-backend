@@ -10,11 +10,21 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "label": {
       "type": "string",
       "unique": true,
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "paragraph": {
       "type": "dynamiczone",
@@ -22,11 +32,20 @@
         "description.nozzle",
         "description.single-rich-text",
         "description.paragraph"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
       "required": true
+    },
+    "sucessful_cases": {
+      "via": "markets",
+      "collection": "sucessful-case"
     }
   }
 }

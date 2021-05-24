@@ -43,7 +43,8 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "market": {
       "type": "enumeration",
@@ -64,6 +65,10 @@
     "display": {
       "type": "boolean",
       "default": false
+    },
+    "markets": {
+      "model": "market",
+      "via": "sucessful_cases"
     }
   }
 }
