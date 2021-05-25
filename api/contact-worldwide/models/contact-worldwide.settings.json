@@ -1,6 +1,6 @@
 {
   "kind": "singleType",
-  "collectionName": "contact_globals",
+  "collectionName": "contact_worldwides",
   "info": {
     "name": "Contact Worldwide",
     "description": ""
@@ -10,6 +10,7 @@
     "timestamps": true,
     "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "koreaHq": {
       "type": "component",

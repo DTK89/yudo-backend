@@ -1,17 +1,20 @@
 {
-  "collectionName": "components_navigation_group_sections",
+  "collectionName": "components_navigation_group_of_sections",
   "info": {
-    "name": "multiSection",
+    "name": "groupOfSections",
     "icon": "angle-double-down",
     "description": ""
   },
   "options": {},
   "attributes": {
     "label": {
-      "type": "string"
+      "type": "string",
+      "unique": false,
+      "required": true
     },
-    "slug": {
-      "type": "string"
+    "urlSlug": {
+      "type": "string",
+      "required": true
     },
     "singleSection": {
       "type": "component",

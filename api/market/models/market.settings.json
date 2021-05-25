@@ -18,7 +18,7 @@
   "attributes": {
     "label": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true,
       "pluginOptions": {
         "i18n": {
@@ -40,12 +40,13 @@
       }
     },
     "slug": {
-      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
       "required": true
-    },
-    "sucessful_cases": {
-      "via": "markets",
-      "collection": "sucessful-case"
     }
   }
 }

@@ -7,9 +7,9 @@ module.exports = ({ env }) => ({
         client: 'postgres',
         host: env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'testdb'),
-        username: env('DATABASE_USERNAME', 'strapi'),
-        password: env('DATABASE_PASSWORD', 'strapi'),
+        database: env('DATABASE_NAME', 'dev_db'),
+        username: env('DATABASE_USERNAME', 'dev_user'),
+        password: env('DATABASE_PASSWORD', 'password'),
         schema: env('DATABASE_SCHEMA', 'public'), // Not Required
         ssl: env('DATABASE_SSL', false)
       },

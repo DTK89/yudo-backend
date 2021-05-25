@@ -8,10 +8,13 @@
   "options": {},
   "attributes": {
     "label": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "slug": {
-      "type": "string"
+    "urlSlug": {
+      "type": "string",
+      "required": true,
+      "unique": false
     }
   }
 }

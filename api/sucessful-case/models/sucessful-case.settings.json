@@ -65,10 +65,6 @@
     "display": {
       "type": "boolean",
       "default": false
-    },
-    "markets": {
-      "model": "market",
-      "via": "sucessful_cases"
     }
   }
 }

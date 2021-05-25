@@ -1,7 +1,7 @@
 {
   "name": "yudo-backend",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Backend app to manage yudopl.com website",
   "scripts": {
     "develop": "strapi develop",

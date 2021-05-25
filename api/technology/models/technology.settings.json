@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "technology",
+  "collectionName": "technologies",
   "info": {
     "name": "technology",
     "description": ""
@@ -24,9 +24,6 @@
         }
       }
     },
-    "slug": {
-      "type": "uid"
-    },
     "paragraph": {
       "type": "dynamiczone",
       "components": [
@@ -38,6 +35,15 @@
           "localized": true
         }
       }
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }

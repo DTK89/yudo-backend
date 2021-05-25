@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/contact-global",
-      "handler": "contact-global.find",
+      "path": "/yudo-global",
+      "handler": "yudo-global.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/contact-global",
-      "handler": "contact-global.update",
+      "path": "/yudo-global",
+      "handler": "yudo-global.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/contact-global",
-      "handler": "contact-global.delete",
+      "path": "/yudo-global",
+      "handler": "yudo-global.delete",
       "config": {
         "policies": []
       }
